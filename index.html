@@ -8,6 +8,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="row"></div>
 
+    <script data-main="assets/main" src="assets/lib/require.min.js"></script>
+    <script>
+        require(['main'], function () {
+            require(['bootstrap']);
+            console.log('bisa');
+
+            require(['page/index']);
+        });
+    </script>
 </body>
 </html>
